@@ -26,7 +26,7 @@ public class GoogleExtendedTest {
 
     @Test
     public void testMethod () {
-        String[] searchWord = search.split("  ");
+        String[] searchWord = search.split(" ");
         for (int i = 0; i < pageCount; i++){
             System.out.println(driver.getCurrentUrl());
             List<WebElement> elements = driver.findElements(By.cssSelector(".rc"));
